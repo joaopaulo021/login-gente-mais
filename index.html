@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Login !</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="img-container">
+            <img src="./img/degrade 1.png" alt="">
+        </div>
+
+        <div class="content-container">
+
+            <div class="logo-container">
+                <img class="img-logo" src="./img/Ativo 9.png" alt="">
+                <div class="img-filter">
+                </div>
+            </div>
+
+            <div class="input-container">
+                <h3>Faça Seu Login !</h3>
+                <input name="email" onchange="onChangeEmail()" class="email-login" placeholder="E-mail" type="text">
+                <div id="email-invalid-error" class="error-msg">* E-Mail Inválido !</div>
+                <div id="email-required-error" class="error-msg">* O E-Mail é Obrigatorio !</div>
+                <input name="password" onchange="onChangePassword()" class="password-login" placeholder="Senha" type="password">
+                <div id="password-required-error" class="error-msg">* A Senha é Obrigatoria!</div>
+                <button onclick="login()" disabled="true" type="submit" class="btn-login">Entrar</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-auth-compat.js"></script>
+<script src="./javascript/fireBaseInit.js"></script>
+<script src="./javascript/script.js"></script>
+<script src="./javascript/loading.js"></script>
+
+
+
+</html>

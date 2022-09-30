@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-menu">
+            <div class="img-header">
+                <img src="./img/logo 1.png" alt="">
+            </div>
+            <div class="container-btn">
+                <div class="logout-container">
+                    <button type="button" class="clear" onclick="logout()"><p>Encerrar Sessão</p></button>
+                    <img class="logout" src="./img/logout.png" alt="">
+                </div>
+
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main>
+        <div class="player-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/91hWhQvaWuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="img-main">
+                <img class="img-arrow" src="./img/arrow-down.png" alt="">
+                <img src="./img/Ativo 9.png" alt="">
+                <p>Acesse Nosso Site !</p>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <ul id="messages">
+            </ul>
+            <div class="send-msg">
+                <form onsubmit="return sendMessage()">
+                    <input id="message" placeholder="Digite sua Mensagem" autocomplete="off">
+                    <input type="submit" class="btn-send">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="btn-rede-social">
+                <img src="./img/instagram-BW.png" alt="">
+                <img src="./img/whatsapp-BW.png" alt="">
+                <img src="./img/facebook-BW.png" alt="">
+
+            </div>
+            <div class="img-footer-container">
+                <img class="img-footer" src="./img/Ativo 4.png" alt="">
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-auth-compat.js"></script>
+
+<script src="./javascript/fireBaseInit.js"></script>
+<script src="./javascript/home.js"></script>
+<script src="./javascript/auth-guard.js"></script>
+<script src="./javascript/liveChat.js"></script>
+
+</html>

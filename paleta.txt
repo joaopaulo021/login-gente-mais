@@ -1,0 +1,8 @@
+Rosa: #c91959
+Azul #002173
+Cinza: #e8e8e8
+
+Tipografia
+
+Títulos: Abeat by Kai
+Textos: Montserrat
