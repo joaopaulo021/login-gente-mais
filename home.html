@@ -22,27 +22,27 @@
                     <button type="button" class="clear" onclick="logout()"><p>Encerrar Sessão</p></button>
                     <img class="logout" src="./img/logout.png" alt="">
                 </div>
-
             </div>
-
         </nav>
-
-
     </header>
 
     <main>
         <div class="player-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/91hWhQvaWuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/91hWhQvaWuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
             <div class="img-main">
-                <img class="img-arrow" src="./img/arrow-down.png" alt="">
-                <img src="./img/Ativo 9.png" alt="">
                 <p>Acesse Nosso Site !</p>
+                <div class="img-arrow">
+                    <img src="./img/arrow-down.png" alt="">
+                </div>
+                <a href="https://www.muitoalemdecinderelas.com.br"><img class="img-link" src="./img/Ativo 9.png" alt=""></a>
             </div>
         </div>
 
         <div class="chat-container">
-            <ul id="messages">
-            </ul>
+            <ul id="messages"></ul>
             <div class="send-msg">
                 <form onsubmit="return sendMessage()">
                     <input id="message" placeholder="Digite sua Mensagem" autocomplete="off">
@@ -54,10 +54,11 @@
     <footer>
         <div class="footer-container">
             <div class="btn-rede-social">
-                <img src="./img/instagram-BW.png" alt="">
-                <img src="./img/whatsapp-BW.png" alt="">
-                <img src="./img/facebook-BW.png" alt="">
-
+                <img src="./img/instagram.png" alt="">
+                <img src="./img/whats.png" alt="">
+                <img src="./img/youtube.png" alt="">
+                <img src="./img/linkedin.png" alt="">
+                <img src="./img/facebook.png" alt="">
             </div>
             <div class="img-footer-container">
                 <img class="img-footer" src="./img/Ativo 4.png" alt="">
