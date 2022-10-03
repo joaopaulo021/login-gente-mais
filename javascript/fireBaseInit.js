@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyA6MiSuZ5tFr-A6Wg9wQ3yuoEBZKp7Bnr8",
-    authDomain: "database-gente-mais.firebaseapp.com",
-    projectId: "database-gente-mais",
-    storageBucket: "database-gente-mais.appspot.com",
-    messagingSenderId: "274600030215",
-    appId: "1:274600030215:web:e1782cca2817d8ef8a3aa2",
+    apiKey: "AIzaSyCMcoEXFfqLGK25cvU3L7ZOOWTUfsJMULE",
+    authDomain: "login-circuito-mulher.firebaseapp.com",
+    projectId: "login-circuito-mulher",
+    storageBucket: "login-circuito-mulher.appspot.com",
+    messagingSenderId: "330547264094",
+    appId: "1:330547264094:web:2eba4a989e03167cdb12cf"
 };
 firebase.initializeApp(firebaseConfig)

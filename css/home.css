@@ -1,401 +1,456 @@
-body {
-    background-color: #fff;
-    height: 100%;
-}
-
-main {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.player-video {
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.video-container {
-    height: 550px;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-header {
-    width: 250px;
-    height: 80px;
-}
-
-.img-header img {
-    width: 100%;
-    height: 100%;
-}
-
-.img-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-left: 20px;
-    width: 250px;
-    height: 100%;
-}
-
-.img-main p {
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-.img-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-arrow img {
-    text-align: center;
-    height: 60px;
-    width: 60px;
-    animation: arrow 2s infinite linear;
-}
-
-.img-link {
-    height: 100%;
-    width: 100%;
-}
-
-.img-link:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: all 1s ease;
-}
-
-@keyframes arrow {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(50px);
-    }
-}
-
-@keyframes arrow-mobile {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(20px);
-    }
-}
-
-.img-link {
-    opacity: 0.7;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #c91959;
-    width: 100%;
-    height: 100%;
-}
-
-.img-footer {
-    display: flex;
-    align-items: center;
-}
-
-.img-footer-container {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-}
-
-.btn-rede-social {
-    display: flex;
-    width: 70%;
-    align-items: center;
-}
-
-.btn-rede-social img {
-    width: 50px;
-    margin-left: 20px;
-    opacity: 0.7;
-}
-
-.btn-rede-social img:hover {
-    cursor: pointer;
-    transform: translateY(-10px);
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-}
-
-.player-video iframe {
-    height: 100%;
-    width: 100%;
-}
-
-header {
-    width: 100%;
-    height: 80px;
-}
-
-.nav-menu {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #002173;
-    box-shadow: 0 0 0.2em #1d1d1d;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around
-}
-
-.container-btn {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100%;
-    width: 70%;
-}
-
-.nav-menu button {
-    color: white;
-    cursor: pointer;
-    border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    background-color: transparent;
-    width: 180px;
-}
-
-.nav-menu button p {
-    width: 170px;
-    padding: 2px;
-}
-
-.logout-container {
-    opacity: 0.7;
-    height: 80px;
-    display: flex;
-    align-items: flex-end;
-}
-
-.logout {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-}
-
-.logout-container:hover {
-    opacity: 1;
-    transform: translateY(-2px);
-    transition: all 1s ease;
-}
-
-.chat-container form {
-    width: 100%;
-    height: 100%;
-}
-
-#message {
-    width: 270px;
-    height: 40px;
-    border: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-}
-
-.btn-send {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 40px;
-    background-color: #002173;
-    color: #e8e8e8;
-    border: none;
-    width: 70px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 15px;
-}
-
-form {
-    display: flex;
-}
-
-#messages {
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    align-items: center;
-    background-color: #e8e8e8;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-#message-sender {
-    font-weight: bold;
-    color: #002173;
-    margin-left: 10px;
-}
-
-#message-container {
-    display: flex;
-    background-color: #e2dddd;
-    border-radius: 10px;
-    margin-top: 7px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
-    font-size: 25px;
-}
-
-#message-area {
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.chat-container {
-    display: flex;
-    border-bottom: none;
-    flex-direction: column;
-    box-shadow: 0 0 1em #1d1d1d;
-    align-items: center;
-    width: 500px;
-    height: 700px;
-}
-
-.send-msg {
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background-color: #bbb8b8;
-    width: 100%;
-    display: flex;
-}
-
-@media screen and (max-width:350px) {
-    .btn-rede-social img {
-        margin-left: 10px;
-        width: 40px;
-    }
-    #message {
-        width: 200px;
-    }
-    .btn-rede-social {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media only screen and (min-width: 1020px) and (max-width: 1440px) {
-    .chat-container {
-        height: 500px;
-        width: 40%;
-    }
-    #messages {
-        height: 500px;
-    }
-    .send-msg {
-        height: 100px;
-    }
-    .player-video {
-        flex-direction: column;
-        width: 100%;
-    }
-    .video-container {
-        width: 100%;
-        height: 300px;
-    }
-}
-
-@media screen and (min-width:700px) {
-    .img-link {
-        width: 100%;
-        height: 100px;
-    }
-    .btn-rede-social {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:768px) {
-    main {
-        flex-direction: column;
-    }
-    .player-video {
-        flex-direction: column;
-        width: 100%;
-    }
-    .video-container {
-        width: 100%;
-        height: 200px;
-    }
-    .img-header {
-        width: 150px;
-    }
-    .img-main {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        height: 100%;
-    }
-    .img-main p {
-        font-size: 15px;
-    }
-    .img-arrow {
-        width: 50px;
-        height: 50px;
-        transform: rotate(270deg);
-    }
-    @keyframes arrow {
-        from {
-            transform: translateY(0);
+        body {
+            background-color: #fff;
+            height: 100%;
         }
-        to {
-            transform: translateY(20px);
+        
+        main {
+            display: flex;
+            width: 100%;
+            height: 100%;
         }
-    }
-    .chat-container {
-        height: 200px;
-        width: 100%;
-    }
-    .btn-send {
-        width: auto;
-    }
-    #messages {
-        height: 200px;
-    }
-    .send-msg {
-        height: 100px;
-    }
-    .footer-container {
-        flex-direction: column;
-    }
-    .img-footer-container {
-        padding: 15px;
-        justify-content: center;
-    }
-    .btn-rede-social {
-        margin-top: 10px;
-        width: 100%;
-        justify-content: center;
-    }
-    .btn-rede-social img {
-        opacity: 0.8;
-    }
-    .logout-container p {
-        font-size: 20px;
-    }
-}
+        
+        .player-video {
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .video-container {
+            width: 100%;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .main-container {
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+        .img-header {
+            width: 250px;
+            padding: 5px;
+            height: 100%;
+        }
+        
+        header {
+            width: 100%;
+            height: 80px;
+        }
+        
+        .nav-menu {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            width: 100%;
+            background-color: #002173;
+            box-shadow: 0 0 0.2em #1d1d1d;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around
+        }
+        
+        .img-header img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .img-main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .link-content {
+            padding: 10px;
+            width: 35%;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-auto-flow: column;
+            height: 100%;
+        }
+        
+        .img-main p {
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        
+        .img-link {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .img-arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(270deg);
+        }
+        
+        .img-arrow img {
+            text-align: center;
+            height: 60px;
+            width: 60px;
+            animation: arrow 1s infinite linear;
+        }
+        
+        .img-link:hover {
+            cursor: pointer;
+            opacity: 1;
+            transition: all 1s ease;
+        }
+        
+        @keyframes arrow {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(30px);
+            }
+        }
+        
+        .img-link {
+            opacity: 1;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #c91959;
+        }
+        
+        .img-footer {
+            display: flex;
+            align-items: center;
+        }
+        
+        .img-footer-container {
+            padding: 15px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+        }
+        
+        .btn-rede-social {
+            display: flex;
+            width: 70%;
+            align-items: center;
+        }
+        
+        .btn-rede-social img {
+            width: 50px;
+            margin-left: 20px;
+            opacity: 0.7;
+        }
+        
+        .btn-rede-social img:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+            transition: all 0.5s ease-in-out;
+            opacity: 1;
+        }
+        
+        .player-video iframe {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .container-btn {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 100%;
+            width: 70%;
+        }
+        
+        .nav-menu button {
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            background-color: transparent;
+            width: 180px;
+        }
+        
+        .nav-menu button p {
+            width: 170px;
+            padding: 2px;
+        }
+        
+        .logout-container {
+            opacity: 0.7;
+            height: 100%;
+            display: flex;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logout {
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .logout-container:hover {
+            opacity: 1;
+            transform: translateY(-2px);
+            transition: all 1s ease;
+        }
+        
+        .chat-container form {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .btn-send {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height: 40px;
+            background-color: #002173;
+            color: #e8e8e8;
+            border: none;
+            width: 70px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        
+        form {
+            display: flex;
+        }
+        
+        #message {
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+        }
+        
+        #message-area {
+            word-break: break-all;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+        
+        #messages {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            align-items: center;
+            background-color: #e8e8e8;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #message-sender {
+            font-weight: bold;
+            color: #002173;
+            margin-left: 10px;
+        }
+        
+        #message-container {
+            display: flex;
+            background-color: #e2dddd;
+            border-radius: 10px;
+            border: 2px solid #bbb8b8;
+            margin-top: 7px;
+            height: 100%;
+            width: 100%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 25px;
+        }
+        
+        .chat-container {
+            overflow-y: auto;
+            display: flex;
+            height: 720px;
+            width: 600px;
+            flex-direction: column;
+            box-shadow: 0 0 1em #1d1d1d;
+            align-items: center;
+        }
+        
+        .send-msg {
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            background-color: #bbb8b8;
+            width: 100%;
+            display: flex;
+        }
+        
+        @media screen and (min-width:320px) {
+            .btn-rede-social img {
+                margin-left: 10px;
+                width: 40px;
+            }
+            #message {
+                width: 200px;
+            }
+            .btn-rede-social {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media only screen and (min-width: 300px) and (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            .img-link {
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+            }
+            .link-content {
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+            }
+            .player-video {
+                width: 100%;
+            }
+            .video-container {
+                width: 100%;
+                height: 200px;
+            }
+            .img-header {
+                width: 150px;
+            }
+            .img-main {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                height: 100%;
+            }
+            .img-main p {
+                font-size: 20px;
+            }
+            .img-arrow {
+                width: 50px;
+                height: 50px;
+                transform: rotate(270deg);
+            }
+            @keyframes arrow {
+                from {
+                    transform: translateY(0);
+                }
+                to {
+                    transform: translateY(40px);
+                }
+            }
+            .chat-container {
+                height: 300px;
+                width: 100%;
+            }
+            .btn-send {
+                height: 100%;
+                width: 40%;
+            }
+            #message {
+                width: 100%;
+            }
+            #messages {
+                height: 100%;
+            }
+            .send-msg {
+                height: 100px;
+            }
+            .footer-container {
+                flex-direction: column;
+            }
+            .img-footer-container {
+                padding: 15px;
+                justify-content: center;
+            }
+            .btn-rede-social {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: center;
+            }
+            .btn-rede-social img {
+                opacity: 0.8;
+            }
+            .logout-container p {
+                font-size: 20px;
+            }
+        }
+        
+        @media only screen and (min-width: 1000px) and (max-width: 1368px) {
+            .chat-container {
+                height: 580px;
+                width: 50%;
+            }
+            .send-msg {
+                height: 100px;
+            }
+            .btn-send {
+                height: 100%;
+                width: 40%;
+            }
+            #message {
+                width: 100%;
+            }
+            .player-video {
+                flex-direction: column;
+                width: 100%;
+                height: 600px;
+            }
+            .video-container {
+                width: 100%;
+            }
+            .img-link {
+                width: 100%;
+                height: 100%;
+            }
+            .img-main {
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .img-arrow {
+                width: 50px;
+                height: 50px;
+            }
+            .link-content {
+                width: 50%;
+            }
+        }
+        
+        @media only screen and (min-width: 700px) and (max-width: 768px) {
+            .img-link {
+                width: 100%;
+                height: 220px;
+            }
+            .btn-rede-social {
+                width: 100%;
+                justify-content: center;
+            }
+            .video-container {
+                width: 100%;
+                height: 500px;
+            }
+            .img-main {
+                height: 100%;
+                width: 100%;
+            }
+        }
