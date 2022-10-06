@@ -22,7 +22,7 @@ firebase.database().ref("messages").on("child_added", function(snapshot) {
 
     html += "<div id='message-container'>"
     html += "<div id='message-sender'>"
-    html += sender + ": "
+    html += sender
     html += "</div>"
 
 
