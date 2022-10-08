@@ -242,7 +242,7 @@
         }
         
         #message-area {
-            word-break: break-all;
+            word-break: break-word;
             margin-left: 10px;
             display: flex;
             align-items: center;
