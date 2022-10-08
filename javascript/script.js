@@ -6,12 +6,10 @@ firebase.auth().onAuthStateChanged(user => {
 
 
 function onChangeEmail() {
-    toggleButtonDisabled()
     toggleEmailErrors()
 }
 
 function onChangePassword() {
-    toggleButtonDisabled()
     togglePasswordErrors()
 }
 
@@ -75,12 +73,6 @@ function togglePasswordErrors() {
 }
 
 
-function toggleButtonDisabled() {
-    const btnLogin = document.querySelector('.btn-login')
-    const passwordValid = isPasswordValid()
-    const emailValid = isEmailValid()
-    btnLogin.disabled = !emailValid || !passwordValid
-}
 
 function isEmailValid() {
     const email = document.querySelector(".email-login").value
